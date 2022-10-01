@@ -1,0 +1,14 @@
+---
+layout: main
+pagination:
+    data: livingrooms.media
+    size: 1
+    alias: photo
+eleventyComputed:
+    permalink: "/photos/{{ photo.id }}/"
+    title: "{{ photo.alt }}"
+---
+<!-- title error fix from https://github.com/11ty/eleventy/issues/1239 -->
+
+<img src="{{ photo.src.large }}" alt="{{ photo.alt }}" />
+<p>Photographer: {{ photo.photographer }} </p>
