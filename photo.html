@@ -12,3 +12,15 @@ eleventyComputed:
 
 <img src="{{ photo.src.large }}" alt="{{ photo.alt }}" />
 <p>Photographer: {{ photo.photographer }} </p>
+<p>
+  Link to photographer's page:
+  <a href="{{ photo.photographer_url }}" style="color: {{ photo.avg_color }};">
+    {{ photo.photographer_url }}
+  </a>
+</p>
+<p>Photographer's ID: {{ photo.photographer_id }} </p>
+<p>
+  Image source:
+  <a href="{{ photo.src.original }}" style="color: {{ photo.avg_color }};">
+    {{ photo.src.original }}
+</p>
