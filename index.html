@@ -2,7 +2,7 @@
 layout: main
 title: Home
 ---
-<p>A collection of Living Room photos by various photographers. Click the images to see more information.</p>
+<h2>A collection of Living Room photos by various photographers. Click the images to see more information.</h2>
 {% for photo in livingrooms.media %}
 <a href="/photos/{{ photo.id }}">
     <img src="{{ photo.src.tiny }}" alt="{{ photo.alt }}" />
